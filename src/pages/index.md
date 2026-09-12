@@ -1,6 +1,6 @@
 ---
-layout: ../../layouts/PostLayout.astro
-title: "私の最初のブログ記事"
+layout: ../layouts/PostLayout.astro
+title: "hosota9's WebSite"
 pubDate: 2022-07-01
 description: "これは私の新しいAstroブログの最初の記事です。"
 author: "Astro学習者"
@@ -10,7 +10,7 @@ image:
 tags: ["astro", "ブログ", "公開学習"]
 ---
 
-# 私の最初のブログ記事
+# Welcome to hosota9's Website!!
 
 投稿日: 2022-07-01
 
