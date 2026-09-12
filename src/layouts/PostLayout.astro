@@ -12,9 +12,9 @@ import background from '../assets/background.svg';
 	        <img id="background" src={background.src} alt="" fetchpriority="high" />
             <main>
                 <section id="hero">
-                    <h1>{frontmatter.title} by {frontmatter.author}</h1>
+                    <h1>{frontmatter.title}</h1>
                     <slot />
-                    <p>Written on: {frontmatter.date}</p>
+                    <p>Written on: {frontmatter.pubDate} by {frontmatter.author}</p>
                 </section>
             </main>
         </div>
@@ -56,5 +56,21 @@ import background from '../assets/background.svg';
 		flex-direction: column;
 		justify-content: center;
 		padding: 16px;
+	}
+
+	@media screen and (max-width: 768px) {
+		#container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#hero {
+			display: block;
+			padding-top: 10%;
+		}
+
+		h1 {
+			line-height: 1.5;
+		}
 	}
 </style>
