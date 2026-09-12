@@ -11,9 +11,11 @@ import background from '../assets/background.svg';
         <div id="container">
 	        <img id="background" src={background.src} alt="" fetchpriority="high" />
             <main>
-                <h1>{frontmatter.title} by {frontmatter.author}</h1>
-                <slot />
-                <p>Written on: {frontmatter.date}</p>
+                <section id="hero">
+                    <h1>{frontmatter.title} by {frontmatter.author}</h1>
+                    <slot />
+                    <p>Written on: {frontmatter.date}</p>
+                </section>
             </main>
         </div>
     </body>
@@ -46,5 +48,13 @@ import background from '../assets/background.svg';
 		height: 100%;
 		display: flex;
 		justify-content: center;
+	}
+
+	#hero {
+		display: flex;
+		align-items: start;
+		flex-direction: column;
+		justify-content: center;
+		padding: 16px;
 	}
 </style>
