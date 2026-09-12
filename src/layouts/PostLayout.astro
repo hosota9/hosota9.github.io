@@ -4,17 +4,19 @@ import background from '../assets/background.svg';
 ---
 <!doctype html>
 <html lang="ja">
-  <head>
-    <title>{frontmatter.title}</title>
-  </head>
-  <body>
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
-    <main>
-      <h1>{frontmatter.title} by {frontmatter.author}</h1>
-      <slot />
-      <p>Written on: {frontmatter.date}</p>
-    </main>
-  </body>
+    <head>
+        <title>{frontmatter.title}</title>
+    </head>
+    <body>
+        <div id="container">
+	        <img id="background" src={background.src} alt="" fetchpriority="high" />
+            <main>
+                <h1>{frontmatter.title} by {frontmatter.author}</h1>
+                <slot />
+                <p>Written on: {frontmatter.date}</p>
+            </main>
+        </div>
+    </body>
 </html>
 
 <style>
@@ -35,7 +37,12 @@ import background from '../assets/background.svg';
 		filter: blur(100px);
 	}
 
-	main {
+	#container {
+		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+		height: 100%;
+	}
+
+    main {
 		height: 100%;
 		display: flex;
 		justify-content: center;
