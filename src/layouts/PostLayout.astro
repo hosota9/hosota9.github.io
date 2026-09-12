@@ -9,9 +9,11 @@ import background from '../assets/background.svg';
   </head>
   <body>
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
-    <h1>{frontmatter.title} by {frontmatter.author}</h1>
-    <slot />
-    <p>Written on: {frontmatter.date}</p>
+    <main>
+      <h1>{frontmatter.title} by {frontmatter.author}</h1>
+      <slot />
+      <p>Written on: {frontmatter.date}</p>
+    </main>
   </body>
 </html>
 
@@ -31,5 +33,11 @@ import background from '../assets/background.svg';
 		height: 100%;
 		z-index: -1;
 		filter: blur(100px);
-	}    
+	}
+
+	main {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+	}
 </style>
