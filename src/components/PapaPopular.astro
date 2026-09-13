@@ -17,6 +17,7 @@
                     <div class="card-category">マインドセット</div>
                     <h3>がんばりすぎない育児のすすめ</h3>
                     <p>完璧なパパじゃなくていい。肩の力を抜いて、子どもと向き合うコツ。</p>
+                    <span class="card-date"><i class="fa-regular fa-clock"></i> 2026.06.01</span>
                 </div>
             </article>
 
@@ -27,6 +28,7 @@
                     <div class="card-category">副業・個人開発</div>
                     <h3>家族の時間を大切にしながら、副業を続けるコツ</h3>
                     <p>時間がなくてもできる工夫と、心をすり減らさない考え方。</p>
+                    <span class="card-date"><i class="fa-regular fa-clock"></i> 2026.06.01</span>
                 </div>
             </article>
 
@@ -37,6 +39,7 @@
                     <div class="card-category">子育て</div>
                     <h3>子どもの「今」を楽しむために、意識したいこと</h3>
                     <p>将来も大事だけど、今この瞬間を一緒に楽しむヒント。</p>
+                    <span class="card-date"><i class="fa-regular fa-clock"></i> 2026.06.01</span>
                 </div>
             </article>
 
@@ -129,14 +132,11 @@ a {
 .card-content{
     padding:20px;
     font-size:0.9rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.card h3{
-    margin-top: 12px;
-    margin-bottom: 10px;
-}
-
-.card-category{
+.card-content .card-category{
     font-size:0.8rem;
     background-color:#fbebdc;
     padding:2px 4px;
@@ -144,5 +144,16 @@ a {
     margin: 0;
     width: max-content;
     color:#5b3008;
+}
+
+.card-content .card h3{
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.card-content .card-date{
+    margin-top: auto;
+    color: #777;
+    font-size: 0.8rem;
 }
 </style>
