@@ -2,6 +2,7 @@
 import Layout from '../layouts/PapaLayout.astro';
 import PapaHero from '../components/PapaHero.astro';
 import PapaPopular from '../components/PapaPopular.astro';
+import PapaCategory from '../components/PapaCategory.astro';
 ---
 <Layout>
     <div class="container">
@@ -9,6 +10,7 @@ import PapaPopular from '../components/PapaPopular.astro';
         <div class="main-pain">
             <div class="left-pain">
                 <PapaPopular />
+                <PapaCategory />
             </div>
             <div class="right-pain">
                 <div class="card">
@@ -17,43 +19,6 @@ import PapaPopular from '../components/PapaPopular.astro';
             </div>
         </div>
     </div>
-
-<section class="section">
-<div class="container">
-
-<h2 class="section-title">カテゴリー</h2>
-
-<div class="categories">
-
-<div class="category">
-    <div class="icon">🍼</div>
-    <h3>子育て</h3>
-</div>
-
-<div class="category">
-    <div class="icon">💼</div>
-    <h3>仕事</h3>
-</div>
-
-<div class="category">
-    <div class="icon">💻</div>
-    <h3>副業</h3>
-</div>
-
-<div class="category">
-    <div class="icon">☕</div>
-    <h3>心を休める</h3>
-</div>
-
-<div class="category">
-    <div class="icon">❤️</div>
-    <h3>暮らし</h3>
-</div>
-
-</div>
-
-</div>
-</section>
 
 <section class="container">
 
@@ -89,25 +54,6 @@ import PapaPopular from '../components/PapaPopular.astro';
 }
 .right-pain{
     flex-basis: 200px;
-}
-
-/* Categories */
-.categories{
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:20px;
-}
-
-.category{
-    background:white;
-    border-radius:20px;
-    padding:24px;
-    text-align:center;
-}
-
-.icon{
-    font-size:2rem;
-    margin-bottom:10px;
 }
 
 /* Message */
