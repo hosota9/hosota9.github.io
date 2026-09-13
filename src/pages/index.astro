@@ -3,6 +3,7 @@ import Layout from '../layouts/PapaLayout.astro';
 import PapaHero from '../components/PapaHero.astro';
 import PapaPopular from '../components/PapaPopular.astro';
 import PapaCategory from '../components/PapaCategory.astro';
+import PapaProfile from '../components/PapaProfile.astro';
 ---
 <Layout>
     <div class="container">
@@ -14,7 +15,7 @@ import PapaCategory from '../components/PapaCategory.astro';
             </div>
             <div class="right-pain">
                 <div class="card">
-                    papaのプロフィール
+                    <PapaProfile />
                 </div>
             </div>
         </div>
@@ -33,11 +34,12 @@ import PapaCategory from '../components/PapaCategory.astro';
     flex-wrap: wrap;
 }
 .left-pain{
-    flex-basis: 940px;
+    flex-basis: 800px;
     margin-right: 20px;
 }
 .right-pain{
     flex-basis: 240px;
+    min-width: 200px;
 }
 
 /* Message */
