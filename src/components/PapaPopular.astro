@@ -1,4 +1,5 @@
 ---
+import CardImage1 from '../assets/hero/hero01.png';
 ---
 
 <section class="popular">
@@ -11,7 +12,7 @@
         <div class="cards">
 
             <article class="card">
-                <img src="/src/assets/hero/hero01.png" alt="がんばりすぎない育児のすすめ">
+                <img src={CardImage1.src} alt="がんばりすぎない育児のすすめ">
                 <span class="card-number rank1">1</span>
                 <div class="card-content">
                     <div class="card-category">マインドセット</div>
@@ -22,7 +23,7 @@
             </article>
 
             <article class="card">
-                <img src="/src/assets/hero/hero01.png" alt="がんばりすぎない育児のすすめ">
+                <img src={CardImage1.src} alt="がんばりすぎない育児のすすめ">
                 <span class="card-number rank2">2</span>
                 <div class="card-content">
                     <div class="card-category">副業・個人開発</div>
@@ -33,7 +34,7 @@
             </article>
 
             <article class="card">
-                <img src="/src/assets/hero/hero01.png" alt="がんばりすぎない育児のすすめ">
+                <img src={CardImage1.src} alt="がんばりすぎない育児のすすめ">
                 <span class="card-number rank3">3</span>
                 <div class="card-content">
                     <div class="card-category">子育て</div>
@@ -146,7 +147,7 @@ a {
     color:#5b3008;
 }
 
-.card-content .card h3{
+.card-content h3{
     margin-top: 12px;
     margin-bottom: 0;
 }
