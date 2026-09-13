@@ -1,12 +1,355 @@
 ---
-import Layout from '../layouts/Layout.astro';
 ---
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<Layout>
-	<h1>Blog</h1>
-	<p>Welcome to my blog!</p>
+<title>おつかれ、パパ。</title>
 
-	<ul>
-      <li><a href="/posts/post-1/">記事1</a></li>
-    </ul>
-</Layout>
+https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+	background: #faf0e6;
+	color: #3d2a18;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 24px;
+}
+
+header{
+    background:#faf0e6;
+    position:sticky;
+    top:0;
+    z-index:100;
+    border-bottom:1px solid #eee;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:700;
+}
+
+.logo-sub{
+    font-size:0.8rem;
+    color:#777;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:32px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+}
+
+/* Hero */
+.hero{
+    padding:80px 0;
+}
+
+.hero-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:60px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero .catch{
+    font-size:1.5rem;
+    margin-bottom:20px;
+    color:#7b5b36;
+}
+
+.hero p{
+    margin-bottom:30px;
+    font-size:1.1rem;
+}
+
+.btn{
+    display:inline-block;
+    background:#d79528;
+    color:white;
+    padding:14px 28px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:24px;
+}
+
+/* Popular */
+.section{
+    padding:80px 0;
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+/* Categories */
+.categories{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+}
+
+.category{
+    background:white;
+    border-radius:20px;
+    padding:24px;
+    text-align:center;
+}
+
+.icon{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+/* Message */
+.message{
+    background:#f6ead4;
+    padding:80px 20px;
+    text-align:center;
+    border-radius:32px;
+}
+
+.message h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+/* Footer */
+footer{
+    margin-top:80px;
+    background:#3f2d1f;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+@media(max-width:768px){
+
+.hero-inner{
+    grid-template-columns:1fr;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.categories{
+    grid-template-columns:1fr 1fr;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container navbar">
+    <div>
+        <div class="logo">☕ おつかれ、パパ。</div>
+        <div class="logo-sub">がんばるパパの、心の休憩所。</div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="/">ホーム</a></li>
+            <li><a href="/posts">記事一覧</a></li>
+            <li><a href="/categories">カテゴリー</a></li>
+            <li><a href="/about">プロフィール</a></li>
+            <li><a href="/">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+
+<div class="hero-inner">
+
+<div>
+    <p class="catch">＼　がんばる毎日に、やさしい休憩を。　／</p>
+
+    <h1>おつかれ、パパ。</h1>
+
+    <p>
+        仕事に育児に、毎日本当におつかれさま。<br>
+        このブログは、がんばるパパが<br>
+		ほっと一息つける場所です。<br>
+        子育てのこと、人生のこと、好きなこと、<br>
+		自分らしい生き方のこと。<br>
+        一緒に、ゆっくり考えていきましょう。
+    </p>
+
+    <li><a href="/posts" class="btn">はじめての方へ</a></li>
+</div>
+
+<div class="hero-image">
+    images/hero.jpg
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">人気の記事</h2>
+
+<div class="cards">
+
+<article class="card">
+    images/article1.jpg
+    <div class="card-content">
+        <h3>がんばりすぎない育児のすすめ</h3>
+        <p>完璧なパパじゃなくていい。</p>
+    </div>
+</article>
+
+<article class="card">
+    images/article2.jpg
+    <div class="card-content">
+        <h3>家族の時間と副業を両立する</h3>
+        <p>無理なく続けるコツ。</p>
+    </div>
+</article>
+
+<article class="card">
+    images/article3.jpg
+    <div class="card-content">
+        <h3>子どもの「今」を楽しむ</h3>
+        <p>あとから振り返れば宝物。</p>
+    </div>
+</article>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">カテゴリー</h2>
+
+<div class="categories">
+
+<div class="category">
+    <div class="icon">🍼</div>
+    <h3>子育て</h3>
+</div>
+
+<div class="category">
+    <div class="icon">💼</div>
+    <h3>仕事</h3>
+</div>
+
+<div class="category">
+    <div class="icon">💻</div>
+    <h3>副業</h3>
+</div>
+
+<div class="category">
+    <div class="icon">☕</div>
+    <h3>心を休める</h3>
+</div>
+
+<div class="category">
+    <div class="icon">❤️</div>
+    <h3>暮らし</h3>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="container">
+
+<div class="message">
+
+<h2>今日も、おつかれさま。</h2>
+
+<p>
+誰かと比べなくていい。<br>
+家族を大切にしようとしているだけで十分すごい。<br>
+この場所が、あなたの小さな休憩所になりますように。
+</p>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 hosota9. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
