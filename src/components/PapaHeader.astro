@@ -1,0 +1,60 @@
+---
+---
+
+<header>
+    <div class="container navbar">
+        <div>
+            <div class="logo">☕ おつかれ、パパ。</div>
+            <div class="logo-sub">がんばるパパの、心の休憩所。</div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/">ホーム</a></li>
+                <li><a href="/posts">記事一覧</a></li>
+                <li><a href="/categories">カテゴリー</a></li>
+                <li><a href="/about">プロフィール</a></li>
+                <li><a href="/">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<style>
+header{
+    background:#faf0e6;
+    position:sticky;
+    top:0;
+    z-index:100;
+    border-bottom:1px solid #eee;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:700;
+}
+
+.logo-sub{
+    font-size:0.8rem;
+    color:#777;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:32px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+}
+
+</style>
