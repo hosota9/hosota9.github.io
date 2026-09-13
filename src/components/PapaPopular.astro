@@ -3,36 +3,38 @@
 
 <section class="popular">
 	<div class="container">
-    <h2 class="section-title"><i class="fa-brands fa-web-awesome"></i> 人気の記事</h2>
-
-    <div class="cards">
-
-        <article class="card">
-            images/article1.jpg
-            <div class="card-content">
-                <h3>がんばりすぎない育児のすすめ</h3>
-                <p>完璧なパパじゃなくていい。</p>
-            </div>
-        </article>
-
-        <article class="card">
-            images/article2.jpg
-            <div class="card-content">
-                <h3>家族の時間と副業を両立する</h3>
-                <p>無理なく続けるコツ。</p>
-            </div>
-        </article>
-
-        <article class="card">
-            images/article3.jpg
-            <div class="card-content">
-                <h3>子どもの「今」を楽しむ</h3>
-                <p>あとから振り返れば宝物。</p>
-            </div>
-        </article>
-
+        <div class="section-title">
+            <h2><i class="fa-brands fa-web-awesome"></i>人気の記事</h2>
+            <a href="/posts">もっと見る <i class="fa-solid fa-chevron-right"></i></a>
         </div>
 
+        <div class="cards">
+
+            <article class="card">
+                images/article1.jpg
+                <div class="card-content">
+                    <h3>がんばりすぎない育児のすすめ</h3>
+                    <p>完璧なパパじゃなくていい。</p>
+                </div>
+            </article>
+
+            <article class="card">
+                images/article2.jpg
+                <div class="card-content">
+                    <h3>家族の時間と副業を両立する</h3>
+                    <p>無理なく続けるコツ。</p>
+                </div>
+            </article>
+
+            <article class="card">
+                images/article3.jpg
+                <div class="card-content">
+                    <h3>子どもの「今」を楽しむ</h3>
+                    <p>あとから振り返れば宝物。</p>
+                </div>
+            </article>
+
+        </div>
     </div>
 </section>
 
@@ -53,15 +55,29 @@
     margin-right:8px;
 }
 .section-title{
-    font-size:1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     margin-bottom:40px;
     padding-bottom:8px;
     border-bottom: solid 1px #c0b090;
 }
-h2{
+.section-title h2{
+    font-size:1.5rem;
     font-weight: 500;
     letter-spacing: 0.1em;
-} 
+    margin-bottom: 0;
+}
+.more-read{
+    text-align: right;
+    display: absolute;
+    top: -80px;
+}
+a {
+    text-decoration: none;
+    color:#d06b0b;
+}
+
 .cards{
     display:grid;
     grid-template-columns:repeat(3,1fr);
