@@ -1,0 +1,24 @@
+/* セクションタイトル */
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 40px;
+    padding-bottom: 8px;
+    border-bottom: solid 1px #c0b090;
+}
+.section-title h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+}
+.more-read {
+    text-align: right;
+    display: absolute;
+    top: -80px;
+}
+a {
+    text-decoration: none;
+    color: #d06b0b;
+}
