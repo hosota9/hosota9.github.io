@@ -4,8 +4,19 @@ import PapaHero from '../components/PapaHero.astro';
 import PapaPopular from '../components/PapaPopular.astro';
 ---
 <Layout>
-	<PapaHero />
-    <PapaPopular />
+    <div class="container">
+    	<PapaHero />
+        <div class="main-pain">
+            <div class="left-pain">
+                <PapaPopular />
+            </div>
+            <div class="right-pain">
+                <div class="card">
+                    papaのプロフィール
+                </div>
+            </div>
+        </div>
+    </div>
 
 <section class="section">
 <div class="container">
@@ -67,6 +78,17 @@ import PapaPopular from '../components/PapaPopular.astro';
     max-width:1200px;
     margin:auto;
     padding:0 24px;
+}
+.main-pain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.left-pain{
+    flex-basis: 820px;
+}
+.right-pain{
+    flex-basis: 200px;
 }
 
 /* Categories */
