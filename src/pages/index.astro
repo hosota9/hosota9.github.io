@@ -53,5 +53,16 @@ import PapaHitokoto from '../components/PapaHitokoto.astro';
 		grid-template-columns:1fr 1fr;
 	}
 }
+@media(max-width: 600px){
+    .main-pain{
+        flex-direction: column;
+    }
+    .left-pain{
+        max-width: 100%;
+    }
+    .right-pain{
+        flex: 1;
+    }
+}
 
 </style>
