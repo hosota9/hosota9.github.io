@@ -59,9 +59,13 @@ import CardImage1 from '../assets/hero/hero01.png';
 .cards{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 24px;
+}
+@media(max-width:600px){
+    .cards{
+        flex-direction: column;
+    }
 }
 
 .card{
@@ -71,7 +75,6 @@ import CardImage1 from '../assets/hero/hero01.png';
     position: relative;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     flex: 1;
-    min-width: 200px;
 }
 
 .card img{
