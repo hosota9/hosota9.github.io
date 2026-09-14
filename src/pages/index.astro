@@ -7,8 +7,10 @@ import PapaProfile from '../components/PapaProfile.astro';
 import PapaHitokoto from '../components/PapaHitokoto.astro';
 ---
 <Layout>
-    <div class="container">
+    <div class="container-hero">
     	<PapaHero />
+    </div>
+    <div class="container">
         <div class="main-pain">
             <div class="left-pain">
                 <PapaPopular />
@@ -25,6 +27,16 @@ import PapaHitokoto from '../components/PapaHitokoto.astro';
 </Layout>
 
 <style>
+.container-hero{
+    max-width:1200px;
+    margin:auto;
+    padding: 0 12px;
+}
+@media(max-width: 928px){
+    .container-hero{
+        padding: 0;
+    }
+}
 .container{
     max-width:1200px;
     margin:auto;
