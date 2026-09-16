@@ -1,14 +1,11 @@
 ---
-const { frontmatter } = Astro.props;
+const { frontmatter, showHero } = Astro.props;
 import PapaHeader from '../components/PapaHeader.astro';
 import PapaHero from '../components/PapaHero.astro';
 import PapaProfile from '../components/PapaProfile.astro';
 import PapaHitokoto from '../components/PapaHitokoto.astro';
 import PapaFooter from '../components/PapaFooter.astro';
 import '../styles/global.css';
-
-// hero表示制御
-const showHero = frontmatter.showHero !== false;
 ---
 <!doctype html>
 <html lang="ja">
@@ -24,7 +21,7 @@ const showHero = frontmatter.showHero !== false;
 	</head>
     <body>
         <PapaHeader />
-		{showHero ? <div class="hero-content"><PapaHero /></div> : null}
+		{Astro.props.showHero ? <div class="hero-content"><PapaHero /></div> : null}
 	    <div class="container">
 		    <div class="main-pain">
 			    <div class="left-pain">
