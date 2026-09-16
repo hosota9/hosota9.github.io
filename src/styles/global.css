@@ -1,3 +1,22 @@
+/* 見出し */
+h1 {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-top: 48px;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+    border-bottom: solid 1px #c0b090;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-top: 48px;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+    border-bottom: solid 1px #c0b090;
+}
+
 /* セクションタイトル */
 section {
     margin-bottom: 36px;
@@ -11,11 +30,9 @@ section .section-title {
     border-bottom: solid 1px #c0b090;
 }
 section .section-title h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
     margin-top: 0;
-    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 section .more-read {
     text-align: right;
