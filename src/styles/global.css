@@ -25,3 +25,10 @@ section a {
     text-decoration: none;
     color: #d06b0b;
 }
+
+/* postのカバー画像 */
+img[alt="post-coverimg"] {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
