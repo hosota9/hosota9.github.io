@@ -1,5 +1,7 @@
 ---
+import Layout from '../layouts/PapaLayout.astro';
 ---
+
 今日もお父さん業お疲れさまです。
 仕事に育児、家事に地域活動。
 気づけば、自分の時間なんてほとんどない。
