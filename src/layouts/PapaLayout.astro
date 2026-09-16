@@ -2,6 +2,8 @@
 const { frontmatter } = Astro.props;
 import PapaHeader from '../components/PapaHeader.astro';
 import PapaHero from '../components/PapaHero.astro';
+import PapaProfile from '../components/PapaProfile.astro';
+import PapaHitokoto from '../components/PapaHitokoto.astro';
 import PapaFooter from '../components/PapaFooter.astro';
 import '../styles/global.css';
 
@@ -24,7 +26,17 @@ const showHero = frontmatter.showHero !== false;
         <PapaHeader />
 		{showHero ? <div class="hero-content"><PapaHero /></div> : null}
 	    <div class="container">
-	        <slot />
+		    <div class="main-pain">
+			    <div class="left-pain">
+			        <slot />
+				</div>
+				<div class="right-pain">
+					<div class="card">
+						<PapaProfile />
+						<PapaHitokoto />
+					</div>
+			    </div>
+			</div>
 		</div>
 		<PapaFooter />
     </body>
@@ -46,4 +58,31 @@ body {
         margin: -8px;
     }
 }
+.main-pain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.left-pain{
+    max-width: 940px;
+    flex: 1;
+}
+.right-pain{
+    flex: 0 0 300px;
+}
+
+@media(max-width:768px){
+    .main-pain{
+        flex-direction: column;
+    }
+    .left-pain{
+        max-width: 100%;
+    }
+    .right-pain{
+        flex: 1;
+    }
+}
+
 </style>
