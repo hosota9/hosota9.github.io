@@ -21,7 +21,7 @@ import '../styles/global.css';
 	</head>
     <body>
         <PapaHeader />
-		{Astro.props.showHero ? <div class="container-hero"><PapaHero /></div> : null}
+		{Astro.props.showHero==="true" ? <div class="container-hero"><PapaHero /></div> : null}
 	    <div class="container">
 		    <div class="main-pain">
 			    <div class="left-pain">
