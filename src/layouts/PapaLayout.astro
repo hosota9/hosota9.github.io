@@ -7,7 +7,6 @@ import '../styles/global.css';
 
 // hero表示制御
 const showHero = frontmatter.showHero !== false;
-const heroHtml = '<div class="hero-content"><PapaHero /></div>';
 ---
 <!doctype html>
 <html lang="ja">
@@ -23,7 +22,7 @@ const heroHtml = '<div class="hero-content"><PapaHero /></div>';
 	</head>
     <body>
         <PapaHeader />
-		{showHero ? heroHtml : ''}
+		{showHero ? <div class="hero-content"><PapaHero /></div> : null}
         <slot />
 		<PapaFooter />
     </body>
