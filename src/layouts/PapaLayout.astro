@@ -23,7 +23,9 @@ const showHero = frontmatter.showHero !== false;
     <body>
         <PapaHeader />
 		{showHero ? <div class="hero-content"><PapaHero /></div> : null}
-        <slot />
+	    <div class="container">
+	        <slot />
+		</div>
 		<PapaFooter />
     </body>
 </html>

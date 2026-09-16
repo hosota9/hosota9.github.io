@@ -8,28 +8,21 @@ import PapaHitokoto from '../components/PapaHitokoto.astro';
 showHero: true;
 ---
 <Layout>
-    <div class="container">
-        <div class="main-pain">
-            <div class="left-pain">
-                <PapaPopular />
-                <PapaCategory />
-            </div>
-            <div class="right-pain">
-                <div class="card">
-                    <PapaProfile />
-                    <PapaHitokoto />
-                </div>
+    <div class="main-pain">
+        <div class="left-pain">
+            <PapaPopular />
+            <PapaCategory />
+        </div>
+        <div class="right-pain">
+            <div class="card">
+                <PapaProfile />
+                <PapaHitokoto />
             </div>
         </div>
     </div>
 </Layout>
 
 <style>
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:0 12px;
-}
 .main-pain{
     display: flex;
     flex-direction: row;
