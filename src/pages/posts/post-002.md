@@ -1,10 +1,9 @@
 ---
 layout: "../../layouts/PapaLayout.astro"
+coverImg: "../../assets/postimg/postimg01.png"
 ---
 
 # パパにおすすめのストレス解消法5選
-
-![カバー画像](../../assets/postimg/postimg01.png)
 
 今日もお父さん業お疲れさまです。
 
