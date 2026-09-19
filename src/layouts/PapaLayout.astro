@@ -25,18 +25,19 @@ import '../styles/global.css';
 	    <div class="container">
 		    <div class="main-pain">
 			    <div class="left-pain">
-			        <slot />
-				</div>
-				<div class="right-pain">
-					<div class="card">
-						<PapaProfile />
-						<PapaHitokoto />
-					</div>
+					  <h1>{frontmatter.title}</h1>
+			      <slot />
+				  </div>
+			  	<div class="right-pain">
+				  	<div class="card">
+					  	<PapaProfile />
+					  	<PapaHitokoto />
+				  	</div>
 			    </div>
 			</div>
 		</div>
 		<PapaFooter />
-    </body>
+  </body>
 </html>
 
 <style>
