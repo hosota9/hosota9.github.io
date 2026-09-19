@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/PapaLayout.astro"
-title: "〜何気ない休日の幸せ〜"
+title: "オンとオフの切り替え方"
 ---
 
 ## オンとオフの切り替え方
