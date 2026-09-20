@@ -1,6 +1,8 @@
 ---
-layout: "../../layouts/PapaLayout.astro"
-title: "家族の時間を大切にしながら、副業を続けるコツ"
+layout: ../../layouts/PapaLayout.astro
+title: 家族の時間を大切にしながら、副業を続けるコツ
+category: 副業・個人開発
+postdate: 2026.09.17
 ---
 
 ![post-coverimg](../../assets/postimg/postimg-002.png)
