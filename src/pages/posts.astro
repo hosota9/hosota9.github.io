@@ -15,7 +15,7 @@ import CardImage1 from '../../assets/postimg/postimg-001.png';
     {allPosts.map((post: any) => (
       <article class="card">
         <a href={post.url}>
-          <img src={CardImage1} alt={post.frontmatter.title} />
+          <img src={CardImage1.src} alt={post.frontmatter.title} />
           <div class="card-content">
             <div class="card-category">{post.frontmatter.category}</div>
             <h3>{post.frontmatter.title}</h3>
