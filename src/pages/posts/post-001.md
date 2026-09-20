@@ -1,10 +1,10 @@
 ---
-layout: "../../layouts/PapaLayout.astro"
-title: "パパにおすすめのストレス解消法5選"
-category: "マインドセット"
-abstract: "「正直、ちょっと疲れたな…」と感じたときにおすすめのストレス解消法をご紹介。"
-postdate: "2026.09.16"
-coverimg: "../../assets/postimg/postimg-001.png"
+layout: ../../layouts/PapaLayout.astro
+title: パパにおすすめのストレス解消法5選
+category: マインドセット
+description: 「正直、ちょっと疲れたな…」と感じたときにおすすめのストレス解消法をご紹介。
+postdate: 2026.09.16
+postimg: ../../assets/postimg/postimg-001.png
 ---
 
 ![post-coverimg](../../assets/postimg/postimg-001.png)
