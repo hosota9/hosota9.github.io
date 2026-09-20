@@ -59,8 +59,13 @@ import CardImage3 from '../assets/postimg/postimg01.png';
     margin-right: 8px;
 }
 
-/* カードは3列で表示 */
+/* カードは基本3列、スマホ1列で表示 */
 .card {
     width: calc(33.3333% - 16px);
+}
+@media (max-width: 928px) {
+    .card {
+        width: 100%;
+    }
 }
 </style>
