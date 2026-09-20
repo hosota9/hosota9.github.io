@@ -8,10 +8,31 @@ const pageTitle = "記事一覧";
   <ul>
     {allPosts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
   </ul>
+
+  <div class="cards">
+    {allPosts.map((post: any) => (
+      <article class="card">
+        <a href={post.url}>
+          <img src={post.frontmatter.coverimg} alt={post.frontmatter.title} />
+          <div class="card-content">
+            <div class="card-category">{post.frontmatter.category}</div>
+            <h3>{post.frontmatter.title}</h3>
+            <p>{post.frontmatter.abstract}</p>
+            <span class="card-date"><i class="fa-regular fa-clock"></i> {post.frontmatter.postdate}</span>
+          </div>
+        </a>
+      </article>
+    ))}
+  </div>
+
 </Layout>
 
 <style>
 h2{
-    margin-top: 8px;
+  margin-top: 8px;
+}
+/* カードは2列で表示 */
+.card {
+  width: calc(50% - 16px);
 }
 </style>

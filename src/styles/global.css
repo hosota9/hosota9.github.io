@@ -47,3 +47,86 @@ img[alt="post-coverimg"] {
     height: auto;
     margin-bottom: 12px;
 }
+
+/* カードの装飾 */
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+}
+.card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* flex: 1;*/
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.card .card-number {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 40px;
+}
+.card .rank1 {
+    background: hsl(40 100% 55% / 0.95);
+}
+.card .rank2 {
+    background: hsla(209, 40%, 50%, 0.95);
+}
+.card .rank3 {
+    background: hsla(42, 50%, 46%, 0.95);
+}
+
+.card-content {
+    padding: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 260px);
+}
+
+.card-content .card-category {
+    font-size: 0.8rem;
+    background-color: #fbebdc;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0;
+    width: max-content;
+    color: #5b3008;
+}
+
+.card-content h3 {
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.card-content .card-date {
+    margin-top: auto;
+    color: #777;
+    font-size: 0.8rem;
+}
+
+article a {
+    color: #3d2a18;
+}
