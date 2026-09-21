@@ -1,9 +1,14 @@
 ---
-layout: "../../layouts/PapaLayout.astro"
 title: "オンとオフの切り替え方"
+category: マインドセット
+description: オンとオフの切り替え方
+postdate: 2026-09-22
+postimg:
+    src: ../assets/postimg/postimg-001.png
+    alt: オンとオフの切り替え方
 ---
 
-![post-coverimg](../../assets/postimg/postimg-002.png)
+![post-coverimg](../assets/postimg/postimg-002.png)
 
 今日もお父さん業お疲れさまです。
 

@@ -1,11 +1,14 @@
 ---
-layout: ../../layouts/PapaLayout.astro
 title: 家族の時間を大切にしながら、副業を続けるコツ
 category: 副業・個人開発
-postdate: 2026.09.17
+description: 家族の時間を大切にしながら、副業を続けるコツ
+postdate: 2026-09-17
+postimg:
+    src: ../assets/postimg/postimg-002.png
+    alt: 家族の時間を大切にしながら、副業を続けるコツ
 ---
 
-![post-coverimg](../../assets/postimg/postimg-002.png)
+![post-coverimg](../assets/postimg/postimg-002.png)
 
 今日もお父さん業お疲れさまです。
 

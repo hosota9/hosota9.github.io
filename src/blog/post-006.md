@@ -1,9 +1,14 @@
 ---
-layout: "../../layouts/PapaLayout.astro"
 title: "〜何気ない休日の幸せ〜"
+category: マインドセット
+description: 〜何気ない休日の幸せ〜
+postdate: 2026-09-21
+postimg:
+    src: ../assets/postimg/postimg-001.png
+    alt: 〜何気ない休日の幸せ〜
 ---
 
-![post-coverimg](../../assets/postimg/postimg-002.png)
+![post-coverimg](../assets/postimg/postimg-002.png)
 
 休日の朝は、平日より少しだけ早く目が覚める。
 

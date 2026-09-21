@@ -1,9 +1,14 @@
 ---
-layout: "../../layouts/PapaLayout.astro"
 title: "子育てパパが休日の充実感を上げるための2つのコツ"
+category: マインドセット
+description: 子育てパパが休日の充実感を上げるための2つのコツ
+postdate: 2026-09-23
+postimg:
+    src: ../assets/postimg/postimg-001.png
+    alt: 子育てパパが休日の充実感を上げるための2つのコツ
 ---
 
-![post-coverimg](../../assets/postimg/postimg-002.png)
+![post-coverimg](../assets/postimg/postimg-002.png)
 
 今日もお父さん業お疲れさまです。
 
