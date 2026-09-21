@@ -1,9 +1,9 @@
 ---
-title: "頑張るお父さんへ贈る「月曜日の憂鬱」を軽減する方法"
-category: マインドセット
-description: 頑張るお父さんへ贈る「月曜日の憂鬱」を軽減する方法
+title: 頑張るお父さんへ贈る「月曜日の憂鬱」を軽減する方法
+category: 仕事・キャリア
+description: お父さんたちの永遠の悩み、週始めの仕事のつらさを軽くする考え方。
 pubdate: 2026-09-18
-postimg: ../assets/postimg/postimg-001.png
+postimg: ../assets/postimg/postimg-003.png
 ---
 
 今日もお父さん業お疲れさまです。

@@ -1,9 +1,9 @@
 ---
 title: "疲れた夜に読んでほしい話"
 category: マインドセット
-description: 疲れた夜に読んでほしい話
+description: 帰りの通勤電車で読んでほしい、ちょっと心を軽くするお話。
 pubdate: 2026-09-19
-postimg: ../assets/postimg/postimg-001.png
+postimg: ../assets/postimg/postimg-004.png
 ---
 
 今日もお父さん業お疲れさまです。
