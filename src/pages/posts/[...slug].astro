@@ -12,5 +12,6 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 <Layout frontmatter={post.data} showHero="false">
+  <h1>{post.data.title}</h1>
   <Content />
 </Layout>

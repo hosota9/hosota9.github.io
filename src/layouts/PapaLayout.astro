@@ -5,9 +5,6 @@ import PapaProfile from '../components/PapaProfile.astro';
 import PapaHitokoto from '../components/PapaHitokoto.astro';
 import PapaFooter from '../components/PapaFooter.astro';
 import '../styles/global.css';
-
-const { frontmatter, showHero } = Astro.props;
-const hasFrontmatter = frontmatter !== undefined && frontmatter.title !== undefined;
 ---
 <!doctype html>
 <html lang="ja">
@@ -27,7 +24,6 @@ const hasFrontmatter = frontmatter !== undefined && frontmatter.title !== undefi
 	    <div class="container">
 		    <div class="main-pain">
 			    <div class="left-pain">
-					  {hasFrontmatter ? <h1>{frontmatter.title}</h1> : null}
 			      <slot />
 				  </div>
 			  	<div class="right-pain">
