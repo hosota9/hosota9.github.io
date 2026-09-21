@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 ---
 <article class="card">
     <a href={`/posts/${post.id}/`}>
-        <Image src={post.data.postimg.src} alt={post.data.postimg.alt} />
+        <Image src={post.data.postimg} alt={post.data.title} />
         <div class="card-content">
             <div class="card-category">{post.data.category}</div>
             <h3>{post.data.title}</h3>

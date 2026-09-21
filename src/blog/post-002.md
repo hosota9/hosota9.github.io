@@ -3,12 +3,8 @@ title: 家族の時間を大切にしながら、副業を続けるコツ
 category: 副業・個人開発
 description: 時間がなくてもできる工夫と、心をすり減らさないための考え方。
 pubdate: 2026-09-17
-postimg:
-    src: ../assets/postimg/postimg-002.png
-    alt: 家族の時間を大切にしながら、副業を続けるコツ
+postimg: ../assets/postimg/postimg-002.png
 ---
-
-![post-coverimg](../assets/postimg/postimg-002.png)
 
 今日もお父さん業お疲れさまです。
 

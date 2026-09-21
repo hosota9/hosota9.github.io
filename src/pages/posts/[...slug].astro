@@ -13,5 +13,15 @@ const { Content } = await render(post);
 ---
 <Layout frontmatter={post.data} showHero="false">
   <h1>{post.data.title}</h1>
+  <img src={post.data.postimg.src} alt={post.data.title} />
   <Content />
 </Layout>
+
+<style>
+  h1{
+    margin-bottom: 24px;
+  }
+  img {
+    width: 100%;
+  }
+</style>

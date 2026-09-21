@@ -10,10 +10,7 @@ const blogCollection = defineCollection({
             category: z.string(),
             description: z.string(),
             pubdate: z.date(),
-            postimg: z.object({
-                src: image(),
-                alt: z.string(),
-            }),
+            postimg: image(),
         }),
 });
 

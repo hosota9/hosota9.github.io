@@ -3,12 +3,8 @@ title: "昭和・平成・令和で変わる父親像──社会の変化が求
 category: マインドセット
 description: 昭和・平成・令和で変わる父親像──社会の変化が求めた父親の役割とは
 pubdate: 2026-09-20
-postimg:
-    src: ../assets/postimg/postimg-001.png
-    alt: 昭和・平成・令和で変わる父親像──社会の変化が求めた父親の役割とは
+postimg: ../assets/postimg/postimg-001.png
 ---
-
-![post-coverimg](../assets/postimg/postimg-002.png)
 
 今日もお父さん業お疲れさまです。
 

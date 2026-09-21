@@ -3,12 +3,8 @@ title: パパにおすすめのストレス解消法5選
 category: マインドセット
 description: 「正直、ちょっと疲れたな…」と感じたときにおすすめのストレス解消法をご紹介。
 pubdate: 2026-09-16
-postimg:
-    src: ../assets/postimg/postimg-001.png
-    alt: パパにおすすめのストレス解消法5選
+postimg: ../assets/postimg/postimg-001.png
 ---
-
-![post-coverimg](../assets/postimg/postimg-001.png)
 
 今日もお父さん業お疲れさまです。
 

@@ -3,12 +3,8 @@ title: "疲れた夜に読んでほしい話"
 category: マインドセット
 description: 疲れた夜に読んでほしい話
 pubdate: 2026-09-19
-postimg:
-    src: ../assets/postimg/postimg-001.png
-    alt: 疲れた夜に読んでほしい話
+postimg: ../assets/postimg/postimg-001.png
 ---
-
-![post-coverimg](../assets/postimg/postimg-002.png)
 
 今日もお父さん業お疲れさまです。
 
