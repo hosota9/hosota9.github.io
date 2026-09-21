@@ -1,9 +1,9 @@
 ---
-title: "昭和・平成・令和で変わる父親像──社会の変化が求めた父親の役割とは"
-category: マインドセット
-description: 昭和・平成・令和で変わる父親像──社会の変化が求めた父親の役割とは
+title: 昭和・平成・令和で変わる父親像──社会の変化が求めた父親の役割とは
+category: 子育て
+description: 父親とはどうあるべきか。それぞれの時代・社会情勢を踏まえて、これからの父親像を考える。
 pubdate: 2026-09-20
-postimg: ../assets/postimg/postimg-001.png
+postimg: ../assets/postimg/postimg-005.png
 ---
 
 今日もお父さん業お疲れさまです。
