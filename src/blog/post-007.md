@@ -2,7 +2,7 @@
 title: "オンとオフの切り替え方"
 category: マインドセット
 description: オンとオフの切り替え方
-postdate: 2026-09-22
+pubdate: 2026-09-22
 postimg:
     src: ../assets/postimg/postimg-001.png
     alt: オンとオフの切り替え方

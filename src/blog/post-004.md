@@ -2,7 +2,7 @@
 title: "疲れた夜に読んでほしい話"
 category: マインドセット
 description: 疲れた夜に読んでほしい話
-postdate: 2026-09-19
+pubdate: 2026-09-19
 postimg:
     src: ../assets/postimg/postimg-001.png
     alt: 疲れた夜に読んでほしい話

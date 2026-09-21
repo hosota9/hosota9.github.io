@@ -2,7 +2,7 @@
 title: "子育てパパが休日の充実感を上げるための2つのコツ"
 category: マインドセット
 description: 子育てパパが休日の充実感を上げるための2つのコツ
-postdate: 2026-09-23
+pubdate: 2026-09-23
 postimg:
     src: ../assets/postimg/postimg-001.png
     alt: 子育てパパが休日の充実感を上げるための2つのコツ

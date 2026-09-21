@@ -2,7 +2,7 @@
 title: "〜何気ない休日の幸せ〜"
 category: マインドセット
 description: 〜何気ない休日の幸せ〜
-postdate: 2026-09-21
+pubdate: 2026-09-21
 postimg:
     src: ../assets/postimg/postimg-001.png
     alt: 〜何気ない休日の幸せ〜

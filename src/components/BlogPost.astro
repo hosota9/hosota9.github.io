@@ -9,7 +9,7 @@ import { Image } from "astro:assets";
             <div class="card-category">{post.data.category}</div>
             <h3>{post.data.title}</h3>
             <p>{post.data.description}</p>
-            <span class="card-date"><i class="fa-regular fa-clock"></i> {post.data.postdate.toLocaleDateString("ja-JP").replaceAll("/",".")}</span>
+            <span class="card-date"><i class="fa-regular fa-clock"></i> {post.data.pubdate.toLocaleDateString("ja-JP").replaceAll("/",".")}</span>
         </div>
     </a>
 </article>

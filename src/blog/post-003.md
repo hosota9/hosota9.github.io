@@ -2,7 +2,7 @@
 title: "頑張るお父さんへ贈る「月曜日の憂鬱」を軽減する方法"
 category: マインドセット
 description: 頑張るお父さんへ贈る「月曜日の憂鬱」を軽減する方法
-postdate: 2026-09-18
+pubdate: 2026-09-18
 postimg:
     src: ../assets/postimg/postimg-001.png
     alt: 頑張るお父さんへ贈る「月曜日の憂鬱」を軽減する方法

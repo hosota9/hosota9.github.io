@@ -2,7 +2,7 @@
 title: "昭和・平成・令和で変わる父親像──社会の変化が求めた父親の役割とは"
 category: マインドセット
 description: 昭和・平成・令和で変わる父親像──社会の変化が求めた父親の役割とは
-postdate: 2026-09-20
+pubdate: 2026-09-20
 postimg:
     src: ../assets/postimg/postimg-001.png
     alt: 昭和・平成・令和で変わる父親像──社会の変化が求めた父親の役割とは
