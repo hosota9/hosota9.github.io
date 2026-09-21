@@ -1,44 +1,21 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from '../layouts/PapaLayout.astro';
+import BlogPost from '../components/BlogPost.astro';
 const allPosts = await getCollection("blog")
 const pageTitle = "記事一覧";
 ---
 <Layout pagetitle={pageTitle} showHero="false">
   <h1><i class="fa-regular fa-newspaper"></i> 記事一覧</h1>
-  <ul>
-    {allPosts.map((post: any) => <li><a href={`/posts/${post.id}/`}>{post.data.title}</a></li>)}
-  </ul>
-
   <div class="cards">
     {allPosts.map((post: any) => (
-      <article class="card">
-        <a href={`/posts/${post.id}/`}>
-          <img src={post.data.postimg.src} alt={post.data.postimg.alt} />
-          <div class="card-content">
-            <div class="card-category">{post.data.category}</div>
-            <h3>{post.data.title}</h3>
-            <p>{post.data.description}</p>
-            <span class="card-date"><i class="fa-regular fa-clock"></i> {post.data.postdate.toLocaleDateString("ja-JP").replaceAll("/",".")}</span>
-          </div>
-        </a>
-      </article>
+      <BlogPost post={post} />
     ))}
   </div>
-
 </Layout>
-
+  
 <style>
-h2{
-  margin-top: 8px;
-}
-/* カードは基本2列、スマホ1列で表示 */
-.card {
-  width: calc(50% - 16px);
-}
-@media (max-width: 768px) {
-    .card {
-        width: 100%;
-    }
-}
+  h1 {
+    margin-bottom: 24px;
+  }
 </style>

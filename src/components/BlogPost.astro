@@ -1,0 +1,27 @@
+---
+const { post } = Astro.props;
+import { Image } from "astro:assets";
+---
+<article class="card">
+    <a href={`/posts/${post.id}/`}>
+        <Image src={post.data.postimg.src} alt={post.data.postimg.alt} />
+        <div class="card-content">
+            <div class="card-category">{post.data.category}</div>
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+            <span class="card-date"><i class="fa-regular fa-clock"></i> {post.data.postdate.toLocaleDateString("ja-JP").replaceAll("/",".")}</span>
+        </div>
+    </a>
+</article>
+
+<style>
+/* カードは基本2列、スマホ1列で表示 */
+.card {
+  width: calc(50% - 16px);
+}
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+</style>
