@@ -1,9 +1,9 @@
 ---
-title: "オンとオフの切り替え方"
-category: マインドセット
-description: オンとオフの切り替え方
+title: オンとオフの切り替え方
+category: 仕事・キャリア
+description: 仕事のスイッチをなかなか切れないお父さんへ、切り替えのポイントをご紹介。
 pubdate: 2026-09-22
-postimg: ../assets/postimg/postimg-001.png
+postimg: ../assets/postimg/postimg-007.png
 ---
 
 今日もお父さん業お疲れさまです。

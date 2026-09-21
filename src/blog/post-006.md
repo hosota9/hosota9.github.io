@@ -1,9 +1,9 @@
 ---
-title: "〜何気ない休日の幸せ〜"
+title: 〜何気ない休日の幸せ〜
 category: マインドセット
-description: 〜何気ない休日の幸せ〜
+description: パパAIが描く家族の日常を通して、幸せとは何か考えてみる。
 pubdate: 2026-09-21
-postimg: ../assets/postimg/postimg-001.png
+postimg: ../assets/postimg/postimg-006.png
 ---
 
 休日の朝は、平日より少しだけ早く目が覚める。

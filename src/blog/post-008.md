@@ -1,9 +1,9 @@
 ---
-title: "子育てパパが休日の充実感を上げるための2つのコツ"
-category: マインドセット
-description: 子育てパパが休日の充実感を上げるための2つのコツ
+title: 子育てパパが休日の充実感を上げるための2つのコツ
+category: ライフスタイル
+description: 良い休日だったと思えるために、オフの日の過ごし方のコツ。
 pubdate: 2026-09-23
-postimg: ../assets/postimg/postimg-001.png
+postimg: ../assets/postimg/postimg-008.png
 ---
 
 今日もお父さん業お疲れさまです。
