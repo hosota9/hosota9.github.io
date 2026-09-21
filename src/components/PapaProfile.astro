@@ -1,9 +1,10 @@
 ---
+import profileImg from '../assets/profile.png'
 ---
 
 <section>
     <h2>運営者プロフィール</h2>
-    <div class="image"></div>
+    <img src={profileImg.src} alt="profile" />
     <h3>hosota9 | パパブロガー</h3>
     <p>IT企業で働く30代パパ。<br>
         仕事と育児の両立に悩みながらも、「自分らしい生き方」を模索中。<br>
@@ -25,12 +26,10 @@ h2{
     text-align:center;
     border-bottom: solid 1px #c0b090;
 }
-.image{
+img{
+    display: block;
     width:160px;
     height:160px;
-    /*
-    background-image:url('/images/profile.jpg');
-    */
     background-size:cover;
     background-position:center;
     border-radius:50%;
