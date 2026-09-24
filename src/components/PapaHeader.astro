@@ -5,7 +5,9 @@ import HeaderLogo from '../assets/logo_header.png'
 <header>
     <div class="container navbar">
         <div>
-            <img src={HeaderLogo.src} alt="おつかれ、パパ。" id="header-logo"/>
+            <a href="/">
+                <img src={HeaderLogo.src} alt="おつかれ、パパ。" id="header-logo" />
+            </a>
         </div>
 
         <nav>
@@ -14,7 +16,7 @@ import HeaderLogo from '../assets/logo_header.png'
                 <li><a href="/posts">記事一覧</a></li>
                 <li><a href="/categories">カテゴリー</a></li>
                 <li><a href="/about">プロフィール</a></li>
-                <li><a href="/">お問い合わせ</a></li>
+                <li><a href="/contact">お問い合わせ</a></li>
             </ul>
         </nav>
     </div>
@@ -44,7 +46,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 0;
+    padding: 0;
 }
 
 nav ul{
