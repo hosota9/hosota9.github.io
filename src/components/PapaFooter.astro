@@ -21,6 +21,11 @@ footer {
     display: flex;
     justify-content: center;
 }
+@media(max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+}
 #footer-logo {
     width: 240px;
     margin-right: 24px;
@@ -31,11 +36,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     gap: 12px;
-}
-@media(max-width: 768px) {
-    #footer-content {
-        justify-content: row;
-    }
 }
 a {
     color:#c0b090;
