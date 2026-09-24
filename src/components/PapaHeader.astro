@@ -1,11 +1,11 @@
 ---
+import HeaderLogo from '../assets/logo_header.png'
 ---
 
 <header>
     <div class="container navbar">
         <div>
-            <div class="logo">☕ おつかれ、パパ。</div>
-            <div class="logo-sub">がんばるパパの、心の休憩所。</div>
+            <img src={HeaderLogo.src} alt="おつかれ、パパ。" id="header-logo"/>
         </div>
 
         <nav>
@@ -47,17 +47,6 @@ header{
     padding:20px 0;
 }
 
-.logo{
-    font-size: 1.75rem;
-    font-family: 'Zen Kurenaido', sans-serif;
-}
-
-.logo-sub{
-    font-size:0.75rem;
-    letter-spacing: 0.1em;
-    margin-left: 40px;
-}
-
 nav ul{
     display:flex;
     list-style:none;
@@ -74,4 +63,7 @@ nav a{
     color:#444;
 }
 
+#header-logo {
+    width: 240px;
+}
 </style>
