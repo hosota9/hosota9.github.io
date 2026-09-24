@@ -106,27 +106,27 @@ img[alt="post-coverimg"] {
     height: calc(100% - 260px);
 }
 
-.card-content .card-category {
+.card-content h3 {
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+article a {
+    color: #3d2a18;
+}
+
+/* 各種ラベル */
+.category-label {
     font-size: 0.8rem;
-    background-color: #fbebdc;
+    background-color: #f9dfc7;
     padding: 2px 4px;
     border-radius: 4px;
     margin: 0;
     width: max-content;
     color: #5b3008;
 }
-
-.card-content h3 {
-    margin-top: 12px;
-    margin-bottom: 0;
-}
-
-.card-content .card-date {
+.pubdate-label {
     margin-top: auto;
     color: #777;
     font-size: 0.8rem;
-}
-
-article a {
-    color: #3d2a18;
 }

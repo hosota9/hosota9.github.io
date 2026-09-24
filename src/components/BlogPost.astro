@@ -6,10 +6,10 @@ import { Image } from "astro:assets";
     <a href={`/posts/${post.id}/`}>
         <Image src={post.data.postimg} alt={post.data.title} />
         <div class="card-content">
-            <div class="card-category">{post.data.category}</div>
+            <div class="category-label">{post.data.category}</div>
             <h3>{post.data.title}</h3>
             <p>{post.data.description}</p>
-            <span class="card-date"><i class="fa-regular fa-clock"></i> {post.data.pubdate.toLocaleDateString("ja-JP").replaceAll("/",".")}</span>
+            <span class="pubdate-label"><i class="fa-regular fa-clock"></i> {post.data.pubdate.toLocaleDateString("ja-JP").replaceAll("/",".")}</span>
         </div>
     </a>
 </article>

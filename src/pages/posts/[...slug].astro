@@ -12,12 +12,20 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 <Layout frontmatter={post.data} showHero="false">
+  <div id="article-header">
+    <span class="category-label">{post.data.category}</span>
+    <span class="pubdate-label"><i class="fa-regular fa-clock"></i> {post.data.pubdate.toLocaleDateString("ja-JP").replaceAll("/",".")}</span>
+  </div>
   <h1>{post.data.title}</h1>
   <img src={post.data.postimg.src} alt={post.data.title} />
   <Content />
 </Layout>
 
 <style>
+  #article-header {
+    display: flex;
+    justify-content: space-between;
+  }
   h1{
     margin-bottom: 24px;
   }
