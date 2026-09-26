@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content";
+import Layout from '../layouts/PapaLayout.astro';
+import BlogPost from '../components/BlogPost.astro';
+const allPosts = await getCollection("blog")
+allPosts.sort((a, b) => b.data.pubdate.valueOf() - a.data.pubdate.valueOf());
+const pageTitle = "記事一覧";
+---
+<Layout pagetitle={pageTitle} showHero="false">
+  <h1>お問い合わせ</h1>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScGid6MZ713SzUwugQCPHZ02DUk6KdlNh0clwg6eKd0t6yTCQ/viewform?embedded=true" width="640" height="826" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+</Layout>
+  
+<style>
+  h1 {
+    margin-bottom: 24px;
+  }
+</style>
