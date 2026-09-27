@@ -1,11 +1,12 @@
 ---
+import HitokotoImg from "../assets/hitokoto/hitokoto-001.png"
 ---
 
 <section>
     <h2>今日のひとこと</h2>
     <p>「完璧なパパ」より、<br>
     「笑っているパパ」でいよう。</p>
-    <div class="image"></div>
+    <img src={HitokotoImg.src} alt="今日のひとこと">
 </section>
 
 <style>
@@ -27,13 +28,9 @@ p{
     line-height: 1.75;
     margin-bottom:20px;
 }
-.image{
+img {
     width:100%;
-    height:120px;
     border-radius:8px;
-    /*
-    background-image:url('/images/profile.jpg');
-    */
     background-size:cover;
     background-position:center;
     background-color:#e4d4b5;
