@@ -9,15 +9,21 @@ import profileImg from "../assets/profile.png"
 ---
 <Layout pagetitle={pageTitle} showHero="false">
   <h1>プロフィール</h1>
+  <div id="profile-img">
     <img src={profileImg.src} alt="profile" />
-    <h3>hosota9 | パパブロガー</h3>
-    <p>IT企業で働く30代パパ。<br>
-        仕事と育児の両立に悩みながらも、「自分らしい生き方」を模索中。<br>
-        このブログでは、子育てのことや副業・個人開発のこと、日々の気付きなどを発信しています。</p>
+  </div>
+  <h3>hosota9 | パパブロガー</h3>
+  <p>IT企業で働く30代パパ。<br>
+      仕事と育児の両立に悩みながらも、「自分らしい生き方」を模索中。<br>
+      このブログでは、子育てのことや副業・個人開発のこと、日々の気付きなどを発信しています。</p>
 </Layout>
   
 <style>
   h1 {
     margin-bottom: 24px;
+  }
+  img {
+    width: 50%;
+    border-radius:50%;
   }
 </style>
