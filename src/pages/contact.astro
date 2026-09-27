@@ -1,9 +1,5 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from '../layouts/PapaLayout.astro';
-import BlogPost from '../components/BlogPost.astro';
-const allPosts = await getCollection("blog")
-allPosts.sort((a, b) => b.data.pubdate.valueOf() - a.data.pubdate.valueOf());
 const pageTitle = "お問い合わせ";
 ---
 <Layout pagetitle={pageTitle} showHero="false">

@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+import Layout from '../layouts/PapaLayout.astro';
+import BlogPost from '../components/BlogPost.astro';
+const allPosts = await getCollection("blog")
+allPosts.sort((a, b) => b.data.pubdate.valueOf() - a.data.pubdate.valueOf());
+const pageTitle = "カテゴリ";
+---
+<Layout pagetitle={pageTitle} showHero="false">
+  <h1>カテゴリ</h1>
+</Layout>
+  
+<style>
+  h1 {
+    margin-bottom: 24px;
+  }
+</style>
