@@ -3,7 +3,7 @@ title: パパにおすすめの趣味を活かした副業10選！楽しみな�
 category: 副業・個人開発
 description: パにおすすめの副業、選び方、始め方、家庭と両立するコツをご紹介。
 pubdate: 2026-09-27
-postimg: ../assets/postimg/postimg-012.png
+postimg: ../assets/postimg/postimg-012-01.png
 ---
 
 仕事に育児、家事。毎日を忙しく過ごしていると、「もう少し自分のために使える時間がほしい」と思うことはありませんか。
@@ -27,6 +27,8 @@ postimg: ../assets/postimg/postimg-012.png
 そんな副業との付き合い方を考えていきましょう。
 
 ## パパが趣味を活かして副業を始めるメリット
+
+![パパが趣味を活かして副業を始めるメリット](../assets/postimg/postimg-012-02.png)
 
 副業を始めるなら、「できるだけ稼げるもの」を探したくなるかもしれません。
 
