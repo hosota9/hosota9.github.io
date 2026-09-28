@@ -130,3 +130,10 @@ article a {
     color: #777;
     font-size: 0.8rem;
 }
+
+/* 記事内の画像サイズ設定 */
+article img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

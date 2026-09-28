@@ -8,6 +8,7 @@ export default defineConfig({
     site: "https://otsukare-papa.com",
 
     image: {
+        responsiveStyles: true,
         layout: "constrained",
     },
 
