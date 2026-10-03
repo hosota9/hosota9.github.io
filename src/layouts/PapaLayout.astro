@@ -6,7 +6,7 @@ import PapaHitokoto from '../components/PapaHitokoto.astro';
 import PapaFooter from '../components/PapaFooter.astro';
 import '../styles/global.css';
 
-const canonicalURL = new URL(Astro.url.pathname, SITE_URL);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 <!doctype html>
 <html lang="ja">
