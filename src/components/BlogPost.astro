@@ -1,6 +1,12 @@
 ---
 const { post } = Astro.props;
 import { Image } from "astro:assets";
+import defaultPostimg from "../assets/postimg/postimg-000.png";
+
+// カバー画像がない場合はデフォルト画像を表示する
+if (!post.data.postimg) {
+    post.data.postimg = defaultPostimg;
+}
 ---
 <article class="card">
     <a href={`/posts/${post.id}/`}>

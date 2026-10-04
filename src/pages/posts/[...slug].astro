@@ -1,6 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/PapaLayout.astro';
+import defaultPostimg from "../../assets/postimg/postimg-000.png";
+
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   return posts.map(post => ({
@@ -10,6 +12,11 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+// カバー画像がない場合はデフォルト画像を表示する
+if (!post.data.postimg) {
+    post.data.postimg = defaultPostimg;
+}
 ---
 <Layout frontmatter={post.data} showHero="false">
   <article>
