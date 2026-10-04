@@ -4,9 +4,9 @@ import Layout from '../layouts/PapaLayout.astro';
 import BlogPost from '../components/BlogPost.astro';
 const allPosts = await getCollection("blog")
 allPosts.sort((a, b) => b.data.pubdate.valueOf() - a.data.pubdate.valueOf());
-const pageTitle = "記事一覧";
+const title = "記事一覧";
 ---
-<Layout pagetitle={pageTitle} showHero="false">
+<Layout frontmatter={{ title }} showHero="false">
   <h1><i class="fa-regular fa-newspaper"></i> 記事一覧</h1>
   <div class="cards">
     {allPosts.map((post: any) => (

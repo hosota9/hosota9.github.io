@@ -1,9 +1,9 @@
 ---
 import Layout from '../layouts/PapaLayout.astro';
-const pageTitle = "プロフィール";
 import profileImg from "../assets/profile.png"
+const title = "プロフィール";
 ---
-<Layout pagetitle={pageTitle} showHero="false">
+<Layout frontmatter={{ title }} showHero="false">
   <h1>プロフィール</h1>
   <div id="profile-img">
     <img src={profileImg.src} alt="profile" />

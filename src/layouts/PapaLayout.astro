@@ -1,4 +1,5 @@
 ---
+import HeadTitle from '../components/head/HeadTitle.astro';
 import PapaHeader from '../components/PapaHeader.astro';
 import PapaHero from '../components/PapaHero.astro';
 import PapaProfile from '../components/PapaProfile.astro';
@@ -7,6 +8,7 @@ import PapaFooter from '../components/PapaFooter.astro';
 import '../styles/global.css';
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const {frontmatter} = Astro.props;
 ---
 <!doctype html>
 <html lang="ja">
@@ -20,7 +22,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         <meta property="og:image" content="https://otsukare-papa.com/ogp.png" />
         <meta property="og:url" content="https://otsukare-papa.com" />
 
-		<title>おつかれ、パパ。| 仕事も子育ても頑張るパパのためのライフスタイルブログ</title>
+		<HeadTitle frontmatter={frontmatter} />
 
         <link rel="canonical" href={canonicalURL}>
 		<link rel="preconnect" href="https://fonts.googleapis.com">

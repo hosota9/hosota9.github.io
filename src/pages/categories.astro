@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from '../layouts/PapaLayout.astro';
 import BlogPost from '../components/BlogPost.astro';
-const pageTitle = "カテゴリー";
+const title = "カテゴリー";
 
 /* 各カテゴリーのポストを取得 */
 const categories = ["子育て", "仕事・キャリア", "副業・個人開発", "マインドセット", "ライフスタイル"];
@@ -16,7 +16,7 @@ for (let i = 0; i < categories.length; i++) {
   categoryPosts.push({name: categories[i], value: Posts});
 }
 ---
-<Layout pagetitle={pageTitle} showHero="false">
+<Layout frontmatter={{ title }} showHero="false">
 
   {categoryPosts.map((category: any) => (
   <h1>{category.name}</h1>
