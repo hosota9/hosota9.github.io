@@ -142,3 +142,32 @@ article img {
     height: auto;
     display: block;
 }
+
+/* ボタン */
+.btn {
+    background: #fefcf8;
+    width: 180px;
+    height: 36px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin: auto;
+    text-align: center;
+    line-height: 36px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* スマホ向け表示制御class */
+.sp-none {
+    display: block;
+}
+.sp-only {
+    display: none;
+}
+@media (max-width: 768px) {
+    .sp-none {
+        display: none;
+    }
+    .sp-only {
+        display: block;
+    }
+}
