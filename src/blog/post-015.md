@@ -204,7 +204,7 @@ postimg: ../assets/postimg/postimg-015/postimg-015-01.png
 
 ## まとめ：仕事は“我慢”ではなく“自分を整える場所”に変えられる
 
-![まとめ：仕事は“我慢”ではなく“自分を整える場所”に変えられる](../assets/postimg/postimg-000.png)
+![まとめ：仕事は“我慢”ではなく“自分を整える場所”に変えられる](../assets/postimg/postimg-015/postimg-015-03.png)
 
 仕事を楽しくするには、特別な才能や大きな変化が必要ではありません。
 
