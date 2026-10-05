@@ -33,7 +33,7 @@ postimg: ../assets/postimg/postimg-015/postimg-015-01.png
 
 ## 仕事を楽しくするコツ10選
 
-![仕事を楽しくするコツ10選](../assets/postimg/postimg-000.png)
+![仕事を楽しくするコツ10選](../assets/postimg/postimg-015/postimg-015-02.png)
 
 ### 1. 1日の最初に「今日のゴール」を1つ決める
 
