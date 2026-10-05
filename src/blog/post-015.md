@@ -3,7 +3,7 @@ title: 明日も笑顔で乗り切ろう！仕事を楽しくするコツ10選
 category: 仕事・キャリア
 description: 仕事を「しんどいもの」ではなく「自分を育てる場」に変えるためのコツを10個ご紹介します。明日も笑顔で前向きに過ごすための習慣を取り入れてみましょう。
 pubdate: 2026-10-05
-postimg: ../assets/postimg/postimg-000.png
+postimg: ../assets/postimg/postimg-015/postimg-015-01.png
 ---
 
 「今日は疲れた」「明日もまた仕事か…」
