@@ -1,0 +1,43 @@
+---
+import type { GetStaticPathsOptions } from 'astro';
+import { getCollection } from "astro:content";
+import Layout from '../../layouts/PapaLayout.astro';
+import BlogPost from '../../components/BlogPost.astro';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const allPosts = await getCollection("blog");
+  const sortedPosts = await allPosts.sort((a, b) => b.data.pubdate.valueOf() - a.data.pubdate.valueOf());
+  return paginate(sortedPosts, { pageSize: 10 });
+};
+
+const { page } = Astro.props;
+const title = "記事一覧";
+---
+<Layout frontmatter={{ title }} showHero="false">
+  <h1><i class="fa-regular fa-newspaper"></i> 記事一覧（{page.currentPage} / {page.lastPage}ページ）</h1>
+  <div class="cards">
+    {page.data.map((post: any) => (
+      <BlogPost post={post} />
+    ))}
+  </div>
+
+  <div class="pagination">
+    {page.url.first ? <a href={page.url.first}><div class="btn btn-small btn-dark">最初</div></a> : null}
+    {page.url.prev ? <a href={page.url.prev}><div class="btn btn-small btn-dark"><i class="fa-solid fa-chevron-left"></i></div></a> : null}
+    {page.url.next ? <a href={page.url.next}><div class="btn btn-small btn-dark"><i class="fa-solid fa-chevron-right"></i></div></a> : null}
+    {page.url.last ? <a href={page.url.last}><div class="btn btn-small btn-dark">最後</div></a> : null}
+  </div>
+
+</Layout>
+  
+<style>
+  h1 {
+    margin-bottom: 24px;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+  }
+</style>
