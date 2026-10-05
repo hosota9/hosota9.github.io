@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import HitokotoImg from "../assets/hitokoto/hitokoto-001.png"
 ---
 
@@ -6,7 +7,7 @@ import HitokotoImg from "../assets/hitokoto/hitokoto-001.png"
     <h2>今日のひとこと</h2>
     <p>「完璧なパパ」より、<br>
     「笑っているパパ」でいよう。</p>
-    <img src={HitokotoImg.src} alt="今日のひとこと">
+    <Image src={HitokotoImg} alt="今日のひとこと" />
 </section>
 
 <style>

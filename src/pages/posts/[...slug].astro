@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/PapaLayout.astro';
 import defaultPostimg from "../../assets/postimg/postimg-000.png";
@@ -25,7 +26,7 @@ if (!post.data.postimg) {
       <span class="category-label">{post.data.category}</span>
       <span class="pubdate-label"><i class="fa-regular fa-clock"></i> {post.data.pubdate.toLocaleDateString("ja-JP").replaceAll("/",".")}</span>
     </div>
-    <img src={post.data.postimg.src} alt={post.data.title} />
+    <Image src={post.data.postimg} alt={post.data.title} />
     <Content />
   </article>
 </Layout>

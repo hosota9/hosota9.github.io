@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/PapaLayout.astro';
 import profileImg from "../assets/profile.png"
 const title = "プロフィール";
@@ -6,7 +7,7 @@ const title = "プロフィール";
 <Layout frontmatter={{ title }} showHero="false">
   <h1>プロフィール</h1>
   <div id="profile-img">
-    <img src={profileImg.src} alt="profile" />
+    <Image src={profileImg} alt="profile" />
     <h3>hosota9 | パパブロガー</h3>
   </div>
   <p>IT企業で働きながら子育てに奮闘する30代パパ。<br>

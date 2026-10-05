@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import HeaderLogo from '../assets/logo_header.png'
 ---
 
@@ -6,7 +7,7 @@ import HeaderLogo from '../assets/logo_header.png'
     <div class="container navbar">
         <div>
             <a href="/">
-                <img src={HeaderLogo.src} alt="おつかれ、パパ。" id="header-logo" />
+                <Image src={HeaderLogo} alt="おつかれ、パパ。" id="header-logo" />
             </a>
         </div>
 

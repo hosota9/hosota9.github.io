@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import CardImage1 from '../assets/postimg/postimg-001.png';
 import CardImage2 from '../assets/postimg/postimg-002.png';
 import CardImage3 from '../assets/postimg/postimg-003.png';
@@ -14,7 +15,7 @@ import CardImage3 from '../assets/postimg/postimg-003.png';
 
         <article class="card">
             <a href="/posts/post-001">
-                <img src={CardImage1.src} alt="パパにおすすめのストレス解消法5選">
+                <Image src={CardImage1} alt="パパにおすすめのストレス解消法5選" />
                 <span class="card-number rank1">1</span>
                 <div class="card-content">
                     <div class="category-label">マインドセット</div>
@@ -27,7 +28,7 @@ import CardImage3 from '../assets/postimg/postimg-003.png';
 
         <article class="card">
 				<a href="/posts/post-002">
-            <img src={CardImage2.src} alt="家族の時間を大切にしながら、副業を続けるコツ">
+            <Image src={CardImage2} alt="家族の時間を大切にしながら、副業を続けるコツ" />
             <span class="card-number rank2">2</span>
             <div class="card-content">
                 <div class="category-label">副業・個人開発</div>
@@ -40,7 +41,7 @@ import CardImage3 from '../assets/postimg/postimg-003.png';
 
         <article class="card">
 			    <a href="/posts/post-003">
-            <img src={CardImage3.src} alt="がんばりすぎない育児のすすめ">
+            <Image src={CardImage3} alt="がんばりすぎない育児のすすめ" />
             <span class="card-number rank3">3</span>
             <div class="card-content">
                 <div class="category-label">仕事・キャリア</div>
