@@ -1,9 +1,0 @@
----
-const {frontmatter} = Astro.props;
-
-let title = "おつかれ、パパ。| 仕事も子育ても頑張るパパのためのライフスタイルブログ";
-if (frontmatter && frontmatter.title) {
-  title = `${frontmatter.title} | おつかれ、パパ。`;
-}
----
-<title>{title}</title>
