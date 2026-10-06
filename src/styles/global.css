@@ -142,6 +142,10 @@ article img {
     height: auto;
     display: block;
 }
+article p,
+article li {
+    line-height: 1.8;
+}
 
 /* ボタン */
 .btn {
