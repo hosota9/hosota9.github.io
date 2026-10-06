@@ -3,7 +3,7 @@ title: 昭和・平成・令和で変わる父親像──社会の変化が求�
 category: 子育て
 description: 時代の変化に合わせて、父親の役割も変わってきています。その変化を理解し、より良い父親になれる方法について考えます。
 pubdate: 2026-09-20
-postimg: ../assets/postimg/postimg-005.png
+postimg: ../assets/postimg/postimg-005/postimg-005-01.png
 ---
 
 今日もお父さん業お疲れさまです。
