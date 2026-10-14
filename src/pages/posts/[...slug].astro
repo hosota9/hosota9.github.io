@@ -20,7 +20,7 @@ if (!post.data.postimg) {
 }
 ---
 <Layout frontmatter={post.data} showHero="false">
-  <article>
+  <main>
     <h1>{post.data.title}</h1>
     <div id="article-header">
       <span class="category-label">{post.data.category}</span>
@@ -28,7 +28,7 @@ if (!post.data.postimg) {
     </div>
     <Image src={post.data.postimg} alt={post.data.title} />
     <Content />
-  </article>
+  </main>
 </Layout>
 
 <style>

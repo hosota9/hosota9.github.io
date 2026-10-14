@@ -137,13 +137,13 @@ article a {
 }
 
 /* 記事内の画像サイズ設定 */
-article img {
+main img {
     width: 100%;
     height: auto;
     display: block;
 }
-article p,
-article li {
+main p,
+main li {
     line-height: 1.8;
 }
 
