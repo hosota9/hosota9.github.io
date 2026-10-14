@@ -2,6 +2,7 @@
 import PapaHeader from '../components/PapaHeader.astro';
 import PapaHero from '../components/PapaHero.astro';
 import PapaProfile from '../components/PapaProfile.astro';
+import PapaRecent from '../components/PapaRecent.astro';
 import PapaHitokoto from '../components/PapaHitokoto.astro';
 import PapaFooter from '../components/PapaFooter.astro';
 import '../styles/global.css';
@@ -49,12 +50,12 @@ if (frontmatter && frontmatter.title) {
 			      <slot />
 				  </div>
 			  	<div class="right-pain">
-				  	<div>
+				  	<div class="sidebar-stack">
 					  	<PapaProfile />
+					  	<PapaRecent />
 					  	<PapaHitokoto />
 				  	</div>
-			    </div>
-			</div>
+			    </div>			</div>
 		</div>
 		<PapaFooter />
   </body>
@@ -94,6 +95,12 @@ body {
 }
 .right-pain{
     flex: 0 0 300px;
+}
+
+.sidebar-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
 @media(max-width:768px){
